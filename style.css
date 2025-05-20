@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+:root {
+    --primary-red: #9e1a1a;
+    --primary-gold: #d4af37;
+    --dark-red: #7a1515;
+    --light-gold: #f1e5bc;
+    --bg-cream: #fdf8f0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: var(--bg-cream);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.hero-pattern {
+    background-color: #f8f3ec;
+    background-image: radial-gradient(#e6d2c0 0.5px, transparent 0.5px), radial-gradient(#e6d2c0 0.5px, #f8f3ec 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.diamond-svg {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.category-card:hover .category-overlay {
+    opacity: 0.9;
+}
+
+.testimonial-slider {
+    scroll-behavior: smooth;
+}
+
+.scroll-btn:hover {
+    background-color: var(--light-gold);
+}
+
+.newsletter-bg {
+    background: linear-gradient(135deg, #f8e9d6 0%, #e6c9a8 100%);
+}
+
+.gold-gradient {
+    background: linear-gradient(135deg, var(--primary-gold) 0%, #f5d77f 100%);
+}
+
+.red-gradient {
+    background: linear-gradient(135deg, var(--primary-red) 0%, #c73e3e 100%);
+}
+
+/* Custom scrollbar for testimonial slider */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    scrollbar-width: none;  /* For Firefox */
+}

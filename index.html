@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sainath Jewellers | Fine Jewelry Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-red-700" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,2 L16,8 L22,9 L17,14 L18,20 L12,17 L6,20 L7,14 L2,9 L8,8 Z"></path>
+                    </svg>
+                    <span class="text-2xl font-semibold font-['Cormorant_Garamond'] tracking-wider">Sainath Jewellers</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#" class="hover:text-red-700 transition">HOME</a>
+                    <a href="#" class="hover:text-red-700 transition">COLLECTIONS</a>
+                    <a href="#" class="hover:text-red-700 transition">ABOUT</a>
+                    <a href="#" class="hover:text-red-700 transition">CONTACT</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="hover:text-red-700 transition">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="hover:text-red-700 transition">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="hover:text-red-700 transition relative">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="absolute -top-2 -right-2 bg-red-700 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                    </button>
+                    <button class="md:hidden hover:text-red-700 transition">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-gradient-to-r from-white-900 via-red-800 to-red-900 py-8">
+        <div class="container mx-auto px-4 flex justify-center">
+            <div class="relative">
+                <svg width="200" height="260" viewBox="0 0 300 400">
+                    <defs>
+                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#d4af37" />
+                            <stop offset="50%" stop-color="#f5e7a3" />
+                            <stop offset="100%" stop-color="#d4af37" />
+                        </linearGradient>
+                        <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9e1a1a" />
+                            <stop offset="100%" stop-color="#c73e3e" />
+                        </linearGradient>
+                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="3" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+                    <text x="170" y="25" text-anchor="middle" fill="url(#goldGradient)" font-family="'Cormorant Garamond', serif" font-size="40" font-weight="800">Sainath Jewellers</text>
+                    <image href="SJ_logo.jpg" x="20" y="40"  style="width:250px; height:320px;" />
+                    <text x="150" y="385" text-anchor="middle" fill="url(#goldGradient)" font-family="'Cormorant Garamond', serif" font-size="20" font-weight="400">SINCE 1985</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+ <!--   <section class="bg-gradient-to-r from-red-50 to-amber-50">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-light mb-4 leading-tight">Timeless Elegance, <br><span class="font-semibold text-red-800">Modern Design</span></h1>
+                    <p class="text-gray-600 mb-8 max-w-md">Discover our exquisite collection of handcrafted jewelry pieces that blend traditional craftsmanship with contemporary aesthetics.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-red-800 text-white px-8 py-3 rounded-sm hover:bg-red-900 transition">Shop Now</a>
+                        <a href="#" class="border border-red-800 text-red-800 px-8 py-3 rounded-sm hover:bg-red-50 transition">Our Story</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-80 h-80">
+                        <svg class="diamond-svg absolute top-10 left-10" width="180" height="180" viewBox="0 0 100 100" fill="none">
+                            <path d="M50 0L95 50L50 100L5 50L50 0Z" fill="#f0e6ff" stroke="#d4b8ff" stroke-width="1"/>
+                            <path d="M50 10L85 50L50 90L15 50L50 10Z" fill="#e0cfff" stroke="#c9a7ff" stroke-width="1"/>
+                            <path d="M50 20L75 50L50 80L25 50L50 20Z" fill="#d0b8ff" stroke="#bf96ff" stroke-width="1"/>
+                            <path d="M50 30L65 50L50 70L35 50L50 30Z" fill="#c0a1ff" stroke="#b485ff" stroke-width="1"/>
+                            <path d="M50 40L55 50L50 60L45 50L50 40Z" fill="#b08aff" stroke="#a974ff" stroke-width="1"/>
+                        </svg>
+                        <svg class="absolute bottom-0 right-0" width="150" height="150" viewBox="0 0 100 100" fill="none">
+                            <circle cx="50" cy="50" r="45" fill="#ffecd0" stroke="#ffd699" stroke-width="1"/>
+                            <circle cx="50" cy="50" r="35" fill="#ffe0b3" stroke="#ffc266" stroke-width="1"/>
+                            <circle cx="50" cy="50" r="25" fill="#ffd699" stroke="#ffb733" stroke-width="1"/>
+                            <circle cx="50" cy="50" r="15" fill="#ffcc80" stroke="#ffa500" stroke-width="1"/>
+                            <circle cx="50" cy="50" r="5" fill="#ffbf66" stroke="#ff9900" stroke-width="1"/>
+                        </svg>
+                        <svg class="absolute top-0 right-20" width="120" height="120" viewBox="0 0 100 100" fill="none">
+                            <rect x="25" y="25" width="50" height="50" rx="2" fill="#ffccd0" stroke="#ffb3b8" stroke-width="1"/>
+                            <rect x="30" y="30" width="40" height="40" rx="2" fill="#ffb3b8" stroke="#ff8c94" stroke-width="1"/>
+                            <rect x="35" y="35" width="30" height="30" rx="2" fill="#ff8c94" stroke="#ff6b70" stroke-width="1"/>
+                            <rect x="40" y="40" width="20" height="20" rx="2" fill="#ff6b70" stroke="#ff4d57" stroke-width="1"/>
+                            <rect x="45" y="45" width="10" height="10" rx="2" fill="#ff4d57" stroke="#ff3040" stroke-width="1"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-semibold mb-2 text-red-800">Featured Collection</h2>
+                <p class="text-gray-600 max-w-xl mx-auto">Our most coveted pieces, crafted with precision and passion</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gray-100 relative flex items-center justify-center p-6">
+                        <svg width="120" height="120" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" fill="#d4af37" opacity="0.7"/>
+                            <circle cx="50" cy="50" r="35" fill="none" stroke="#fff" stroke-width="1"/>
+                            <circle cx="50" cy="50" r="30" fill="none" stroke="#fff" stroke-width="0.5"/>
+                            <circle cx="40" cy="40" r="5" fill="#ffffff" opacity="0.8"/>
+                        </svg>
+                        <div class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-sm">
+                            <i class="far fa-heart text-gray-400 hover:text-red-500 transition"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Golden Halo Ring</h3>
+                        <p class="text-gray-500 text-sm mb-2">18K Gold with Diamond</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">RS12999</span>
+                            <button class="bg-red-800 text-white px-3 py-1 rounded-sm text-sm hover:bg-red-900 transition">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gray-100 relative flex items-center justify-center p-6">
+                        <svg width="120" height="120" viewBox="0 0 100 100">
+                            <rect x="25" y="40" width="50" height="20" fill="#9e1a1a" opacity="0.9"/>
+                            <circle cx="50" cy="50" r="10" fill="#ffffff" opacity="0.8"/>
+                            <circle cx="50" cy="50" r="8" fill="none" stroke="#9e1a1a" stroke-width="1"/>
+                            <circle cx="50" cy="50" r="5" fill="#d4af37" opacity="0.9"/>
+                        </svg>
+                        <div class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-sm">
+                            <i class="far fa-heart text-gray-400 hover:text-red-500 transition"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Ruby Pendant</h3>
+                        <p class="text-gray-500 text-sm mb-2">Gold with Ruby</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">RS8499</span>
+                            <button class="bg-red-800 text-white px-3 py-1 rounded-sm text-sm hover:bg-red-900 transition">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gray-100 relative flex items-center justify-center p-6">
+                        <svg width="120" height="120" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="30" fill="#d4af37" opacity="0.7"/>
+                            <path d="M50,20 C70,20 80,40 80,50 C80,70 60,80 50,80 C30,80 20,60 20,50 C20,30 40,20 50,20" fill="none" stroke="#9e1a1a" stroke-width="1"/>
+                            <circle cx="35" cy="40" r="3" fill="#9e1a1a"/>
+                            <circle cx="65" cy="40" r="3" fill="#9e1a1a"/>
+                            <circle cx="50" cy="65" r="3" fill="#9e1a1a"/>
+                        </svg>
+                        <div class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-sm">
+                            <i class="far fa-heart text-gray-400 hover:text-red-500 transition"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Floral Earrings</h3>
+                        <p class="text-gray-500 text-sm mb-2">18K Gold with Ruby</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">RS15999</span>
+                            <button class="bg-red-800 text-white px-3 py-1 rounded-sm text-sm hover:bg-red-900 transition">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gray-100 relative flex items-center justify-center p-6">
+                        <svg width="120" height="120" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="25" fill="#d4af37" opacity="0.8"/>
+                            <circle cx="50" cy="50" r="20" fill="none" stroke="#fff" stroke-width="1"/>
+                            <circle cx="50" cy="50" r="15" fill="none" stroke="#fff" stroke-width="0.5"/>
+                            <circle cx="50" cy="50" r="10" fill="#9e1a1a" opacity="0.8"/>
+                            <circle cx="45" cy="45" r="2" fill="#ffffff"/>
+                        </svg>
+                        <div class="absolute top-3 right-3 bg-white rounded-full p-2 shadow-sm">
+                            <i class="far fa-heart text-gray-400 hover:text-red-500 transition"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Ruby Gold Bracelet</h3>
+                        <p class="text-gray-500 text-sm mb-2">Gold with Ruby</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">RS69999</span>
+                            <button class="bg-red-800 text-white px-3 py-1 rounded-sm text-sm hover:bg-red-900 transition">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block border-b-2 border-red-800 text-red-800 font-medium hover:border-red-900 hover:text-red-900 transition">View All Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gradient-to-r from-red-50 to-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-semibold mb-2 text-red-800">Shop by Category</h2>
+                <p class="text-gray-600 max-w-xl mx-auto">Explore our diverse range of jewelry collections</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="category-card relative h-64 rounded-lg overflow-hidden shadow-md cursor-pointer">
+                    <div class="absolute inset-0 bg-amber-100 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#d4af37" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="30" fill="none" stroke="#d4af37" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="20" fill="#d4af37" opacity="0.5"/>
+                            <circle cx="50" cy="50" r="10" fill="#d4af37"/>
+                        </svg>
+                    </div>
+                    <div class="category-overlay absolute inset-0 bg-red-800 bg-opacity-70 opacity-0 transition duration-300 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Rings</h3>
+                            <span class="inline-block border-b border-white">Shop Now</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card relative h-64 rounded-lg overflow-hidden shadow-md cursor-pointer">
+                    <div class="absolute inset-0 bg-red-100 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100">
+                            <path d="M30,50 C30,30 70,30 70,50 C70,70 30,70 30,50" fill="none" stroke="#9e1a1a" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="10" fill="#9e1a1a" opacity="0.5"/>
+                            <circle cx="30" cy="50" r="5" fill="#9e1a1a"/>
+                            <circle cx="70" cy="50" r="5" fill="#9e1a1a"/>
+                        </svg>
+                    </div>
+                    <div class="category-overlay absolute inset-0 bg-red-800 bg-opacity-70 opacity-0 transition duration-300 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Necklaces</h3>
+                            <span class="inline-block border-b border-white">Shop Now</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card relative h-64 rounded-lg overflow-hidden shadow-md cursor-pointer">
+                    <div class="absolute inset-0 bg-amber-100 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100">
+                            <circle cx="30" cy="50" r="15" fill="#d4af37" opacity="0.7"/>
+                            <circle cx="70" cy="50" r="15" fill="#d4af37" opacity="0.7"/>
+                            <line x1="30" y1="50" x2="70" y2="50" stroke="#d4af37" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="category-overlay absolute inset-0 bg-red-800 bg-opacity-70 opacity-0 transition duration-300 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Earrings</h3>
+                            <span class="inline-block border-b border-white">Shop Now</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card relative h-64 rounded-lg overflow-hidden shadow-md cursor-pointer">
+                    <div class="absolute inset-0 bg-red-100 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#9e1a1a" stroke-width="2" stroke-dasharray="5,5"/>
+                            <circle cx="50" cy="50" r="30" fill="none" stroke="#9e1a1a" stroke-width="2"/>
+                            <rect x="40" y="40" width="20" height="20" fill="#9e1a1a" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <div class="category-overlay absolute inset-0 bg-red-800 bg-opacity-70 opacity-0 transition duration-300 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Bracelets</h3>
+                            <span class="inline-block border-b border-white">Shop Now</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 flex justify-center">
+                    <div class="relative w-80 h-80">
+                        <div class="absolute inset-0 bg-red-50 rounded-full"></div>
+                        <div class="absolute inset-8 bg-red-100 rounded-full flex items-center justify-center">
+                            <svg width="150" height="150" viewBox="0 0 100 100">
+                                <path d="M20,50 C20,30 40,20 50,20 C70,20 80,40 80,50 C80,70 60,80 50,80 C30,80 20,60 20,50" fill="none" stroke="#9e1a1a" stroke-width="1"/>
+                                <path d="M30,50 C30,35 40,30 50,30 C65,30 70,40 70,50 C70,65 60,70 50,70 C35,70 30,60 30,50" fill="#d4af37" opacity="0.3"/>
+                                <text x="50" y="54" text-anchor="middle" font-family="serif" font-size="12" fill="#9e1a1a">Since 1985</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-red-800">Our Craftsmanship</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">For over three decades, Elegant Gems has been creating timeless jewelry pieces that celebrate life's most precious moments. Each piece is meticulously crafted by our master artisans who combine traditional techniques with innovative design.</p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">We source only the finest materials—ethically mined gemstones and responsibly sourced precious metals—to create jewelry that is not only beautiful but also made with integrity and care for our planet.</p>
+                    <a href="#" class="bg-red-800 text-white px-8 py-3 rounded-sm hover:bg-red-900 transition">Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gradient-to-r from-red-50 to-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-semibold mb-2 text-red-800">What Our Customers Say</h2>
+                <p class="text-gray-600 max-w-xl mx-auto">Stories from our valued clients</p>
+            </div>
+            
+            <div class="relative">
+                <div class="testimonial-slider flex overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 -mx-4">
+                    <div class="min-w-full px-4 snap-start">
+                        <div class="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-700 font-semibold text-xl">
+                                    S
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold">Sarah Johnson</h4>
+                                    <div class="flex text-amber-500">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic">"The engagement ring I purchased exceeded all my expectations. The craftsmanship is impeccable, and the diamond sparkles beautifully. My fiancée was absolutely speechless when I proposed!"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="min-w-full px-4 snap-start">
+                        <div class="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-700 font-semibold text-xl">
+                                    M
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold">Michael Chen</h4>
+                                    <div class="flex text-amber-500">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic">"I've been a loyal customer for years. Their attention to detail and customer service is unmatched. The anniversary bracelet I bought for my wife became an instant family heirloom."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="min-w-full px-4 snap-start">
+                        <div class="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-700 font-semibold text-xl">
+                                    A
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold">Amelia Rodriguez</h4>
+                                    <div class="flex text-amber-500">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic">"The custom necklace I ordered for my daughter's graduation was absolutely perfect. The team listened to my ideas and created something even more beautiful than I imagined. Worth every penny!"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="prevBtn" class="scroll-btn absolute top-1/2 left-2 -translate-y-1/2 bg-white w-10 h-10 rounded-full shadow-md flex items-center justify-center text-red-700 hover:bg-red-50 transition z-10">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="nextBtn" class="scroll-btn absolute top-1/2 right-2 -translate-y-1/2 bg-white w-10 h-10 rounded-full shadow-md flex items-center justify-center text-red-700 hover:bg-red-50 transition z-10">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="flex justify-center mt-6" id="testimonial-dots">
+                    <button class="w-3 h-3 rounded-full bg-red-700 mx-1"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 mx-1"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 mx-1"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-red-800 to-amber-700 py-16 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-xl mx-auto text-center">
+                <h2 class="text-3xl font-semibold mb-4">Join Our Newsletter</h2>
+                <p class="text-white text-opacity-90 mb-6">Subscribe to receive updates on new collections, exclusive offers, and jewelry care tips.</p>
+                <form class="flex flex-col sm:flex-row gap-3">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-sm focus:outline-none focus:ring-2 focus:ring-amber-300 text-gray-800">
+                    <button type="submit" class="bg-amber-400 text-red-900 px-6 py-3 rounded-sm font-semibold hover:bg-amber-300 transition">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-amber-300">Elegant Gems</h3>
+                <p class="text-gray-400 text-sm mb-4">Crafting timeless jewelry since 1985. We believe in beauty, quality, and ethical sourcing.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-amber-300">Quick Links</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#" class="hover:text-white transition">Collections</a></li>
+                    <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-white transition">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-amber-300">Customer Service</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition">Shipping & Returns</a></li>
+                    <li><a href="#" class="hover:text-white transition">Jewelry Care</a></li>
+                    <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-amber-300">Contact Info</h3>
+                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-map-marker-alt mr-2"></i>123 Jewelry Lane, Gemstone City, GC 12345</p>
+                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-phone mr-2"></i>+1 (555) 123-4567</p>
+                <p class="text-gray-400 text-sm"><i class="fas fa-envelope mr-2"></i>info@elegantgems.com</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500 text-sm">
+            &copy; 2024 Elegant Gems. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
